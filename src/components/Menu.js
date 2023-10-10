@@ -2,11 +2,10 @@ import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Environment, PerspectiveCamera, PresentationControls, ContactShadows, Html, useFBX } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
-import { ColladaLoader } from "three/examples/jsm/loaders/ColladaLoader";
 
 
 const Rocket = () => {
-    const fbx = useFBX('/assets/model.fbx')
+    const fbx = useFBX('/assets/Rocket.fbx')
     return <primitive object={fbx} scale={0.2} rotation={[2.2, -0.3, 0]} />
 }
 
@@ -22,6 +21,7 @@ const CustomMenu = (props) => {
     })
     return (
         <group ref={ref} {...props} dispose={null}>
+            <Rocket />
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={100} />
             </EffectComposer>
@@ -32,8 +32,8 @@ const CustomMenu = (props) => {
 const Menu = () => {
     return (
         <div className='mt-30 h-[70vh] md:mt-0 md:w-full md:h-full'>
-            <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 5], fov: 50 }}>
-                <PerspectiveCamera makeDefault fov={75} position={[0, 0, 2]} focusDistance={[0, 0]} />
+            <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 70 }}>
+                <PerspectiveCamera makeDefault fov={70} position={[0, 0, 2]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
                 <CustomMenu />
