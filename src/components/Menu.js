@@ -32,8 +32,8 @@ const CustomMenu = (props) => {
 const Menu = () => {
     return (
         <div className='mt-30 h-[70vh] md:mt-0 md:w-full md:h-full'>
-            <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 4], fov: 70 }}>
-                <PerspectiveCamera makeDefault fov={70} position={[0, 0, 2]} focusDistance={[0, 0]} />
+            <Canvas shadows dpr={[1, 2]}>
+                <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
                 <CustomMenu />
