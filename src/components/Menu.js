@@ -68,7 +68,16 @@ const Menu = () => {
                 <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
-                <CustomMenu />
+                <PresentationControls
+                    global
+                    config={{ mass: 2, tension: 500 }}
+                    snap={{ mass: 4, tension: 1500 }}
+                    rotation={[0, 0, 0]}
+                    polar={[-Math.PI, Math.PI]}
+                    azimuth={[-Math.PI, Math.PI]}>
+
+                    <CustomMenu rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.25, 0]} />
+                </PresentationControls>
                 <Environment preset="city" />
             </Canvas>
         </div>

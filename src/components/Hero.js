@@ -1,6 +1,6 @@
 import Menu from "./Menu";
 
-const About = () => {
+const Hero = () => {
     return (
         <>
             <div className="absolute top-[20px] left-[20px] md:top-[60px] md:left-[100px]">
@@ -13,4 +13,4 @@ const About = () => {
         </>
     );
 };
-export default About;
+export default Hero;
