@@ -45,14 +45,24 @@ const CustomMenu = (props) => {
                                     {item.label}
                                 </div>
                             </div>
-                        </Html>
 
+                        </Html>
                     </mesh>
 
 
                 </>
             )
             }
+            <>
+                <mesh>
+                    <Html wrapperClass scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[0, 0, -16]} transform>
+                        <div className="flex top-[60px] md:top-[60px] text-center justify-center">
+                            <p className='text-white'>You can chckout this spaceship by left clicking on it and drag the cursor around</p>
+                        </div>
+                    </Html>
+                </mesh>
+
+            </>
             <Rocket />
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={100} />

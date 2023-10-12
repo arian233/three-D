@@ -7,8 +7,9 @@ const Hero = () => {
                 <h1 className="drop-shadow-md text-primary md:text-[60px]"><span className="text-[30px]">Hi,</span><br />
                     My name is Arian
                 </h1>
-                <p className="text-white mt-6 text-[20px]">I am a Fullstack developer</p>
+                <p className="text-white mt-6 text-[20px]">Welcome to my Portfolio Website</p>
             </div>
+
             <Menu />
         </>
     );
