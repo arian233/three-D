@@ -1,21 +1,22 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, PerspectiveCamera, PresentationControls, ContactShadows, Html, useFBX } from '@react-three/drei';
+import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 
 const menuItems = [
+
     {
-        label: 'About Me',
-        content: null
+        label: 'About',
+        value: 'About'
     },
     {
         label: 'Portfolio',
-        content: null
+        value: 'Portfolio'
     },
     {
         label: 'Contact',
-        content: null
+        value: 'Contact'
     }
 ]
 
@@ -27,6 +28,25 @@ const Rocket = () => {
 const CustomMenu = (props) => {
     const ref = useRef()
 
+    const handleMenuItemClick = (label) => {
+        console.log(label)
+        switch (label) {
+            case 'About':
+                document.getElementById('About').scrollIntoView({ behavior: 'smooth' })
+                console.log('About')
+                break;
+            case 'Portfolio':
+                document.getElementById('Portfolio').scrollIntoView({ behavior: 'smooth' })
+                console.log('Portfolio')
+                break;
+            case 'Contact':
+                document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })
+                console.log('Contact')
+                break;
+            default:
+                break;
+        }
+    }
     useFrame((state) => {
         const t = state.clock.getElapsedTime()
         ref.current.rotation.x = -Math.PI / 1.75 + Math.cos(t / 4) / 8
@@ -37,12 +57,14 @@ const CustomMenu = (props) => {
         <group ref={ref} {...props} dispose={null}>
             {menuItems.map((item, key) =>
                 <>
-                    <mesh>
+                    <mesh key={key} onClick={() => handleMenuItemClick(item.label)}>
                         <Html wrapperClass key={key} scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[12, 0, (key - 2) * -3]} transform>
-                            <div className='group relative cursor-pointer flex h-28px justify-between items-center
+                            <div onClick={() => handleMenuItemClick(item.value)}>
+                                <div className='group relative cursor-pointer flex h-28px justify-between items-center
                              text-black w-[97px] text-center text-sm hover:text-white '>
-                                <div className='absolute z-[-1] h-full text-xl text-center align-middle right-0 block transform '>
-                                    {item.label}
+                                    <div className='absolute z-[-1] h-full text-xl text-center align-middle right-0 block transform '>
+                                        {item.label}
+                                    </div>
                                 </div>
                             </div>
 

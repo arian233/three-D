@@ -31,7 +31,7 @@ function CareerTimeLine() {
     }, []);
 
     return (
-        <div className="flex flex-col justify-center bg-black" id="Experiences">
+        <div className="flex flex-col justify-center bg-black" id="Portfolio">
             <h1 className="text-2xl font-bold text-center bg-slate-800 text-slate-50 py-2">Professional Career History Timeline:</h1>
             <h3 className="text-xl font-bold text-center text-slate-50">Click on a job to see more details</h3>
             <div className="items-center flex flex-col">
