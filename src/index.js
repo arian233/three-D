@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Hero />
       <About />
       <Portfolio />
+      <Contact />
       <Footer />
     </Suspense>
     <Loader />
