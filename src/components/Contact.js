@@ -20,16 +20,14 @@ function Contact() {
     };
 
     return (
-        <div className="flex flex-col items-center bg-black py-12" id="Contact">
-            <div className="bg-slate-800 w-full text-white flex flex-col text-center py-2">
-                <h1 className="font-bold text-xl">Lets Connect</h1>
-            </div>
-            <div className="md:w-1/2 w-3/4 justify-center flex flex-grow">
-                <form className="w-full flex-col justify-center items-center" ref={form} onSubmit={sendEmail}>
-                    <div className="flex flex-col justify-between items-center w-full h-1/2 mx-4">
+        <div className="flex flex-col text-2xl font-bold justify-center text-center bg-black" id="Contact">
+            <h1 className="text-2xl font-bold bg-slate-800 text-slate-50 py-2">Lets Connect</h1>
+            <div className="grid grid-cols-6 justify-center">
+                <form className="md:col-start-3 md:col-end-5 col-start-2 col-end-6 justify-center items-center" ref={form} onSubmit={sendEmail}>
+                    <div className="justify-between items-center w-full h-1/2 mx-4">
                         <div className="my-6 flex flex-col w-full">
                             <label className="text-slate-50 text-l pb-2">Name</label>
-                            <input className="rounded-md bg-slate-300 pl-2 h-16 flex flex-col" type="text" name="user_name" placeholder="Type your name here" required />
+                            <input className="rounded-md bg-slate-300 h-16 " type="text" name="user_name" placeholder="Type your name here" required />
                         </div>
                         <div className="my-6 flex flex-col w-full">
                             <label className="text-slate-50 text-l pb-2">Email</label>
@@ -39,14 +37,12 @@ function Contact() {
                             <label className="text-slate-50 text-l pb-2">How can I help you?</label>
                             <textarea className="rounded-md bg-slate-300 pl-2 flex justify-center h-36" name="message" placeholder="Type your message here" required />
                         </div>
-                        <div className="items-center justify-center m-4">
-                            <button className="rounded-lg bg-green-400 pl-10 pr-10 pt-3 pb-3 text-xl font-bold" type="submit" value="Send">Send</button>
+                        <div className="flex items-center justify-center my-8">
+                            <button className="justify-self-center rounded-lg bg-green-500 pl-10 pr-10 pt-3 pb-3 text-xl font-bold" type="submit" value="Send">Send</button>
                         </div>
                     </div>
-
                 </form>
             </div>
-
         </div>
     );
 };

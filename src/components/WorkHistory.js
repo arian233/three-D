@@ -2,12 +2,16 @@ import React, { useState } from "react";
 
 const WorkHistory = ({ company, year, position, achievements, resignation }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    if (isModalOpen) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'unset';
+    }
     return (
-        <div className="flex md:w-1/2 w-full justify-center items-center py-4">
+        <div className="md:col-start-3 md:col-end-5 col-start-1 col-span-6 m-3 justify-center items-center hover:col-start-2 hover:col-end-6 ">
             <div
-                className=" fade-in opacity-0 transition-opacity duration-1000
-           bg-slate-300 w-full m-4 hover:bg-gray-300 rounded-xl p-4 cursor-pointer"
+                className="fade-in opacity-0 transition-opacity duration-1000
+           bg-slate-300 w-full py-4 px-4 rounded-xl cursor-pointer hover:bg-[#EBFF0A]"
                 onClick={() => setIsModalOpen(true)}
             >
                 <div className="flex items-center">
@@ -17,8 +21,8 @@ const WorkHistory = ({ company, year, position, achievements, resignation }) => 
                 <h4>{position}</h4>
             </div>
             {isModalOpen && (
-                <div className="fixed md:w-screen inset-0 flex z-50 items-center justify-center overflow-y-auto bg-black md:text-lg">
-                    <div className=" p-2 rounded-xl shadow-2xl flex flex-col text-slate-50">
+                < div className="fixed md:w-screen inset-0 flex z-50 items-center justify-center overflow-y-auto bg-black md:text-lg">
+                    <div className=" w-5/6 p-2 rounded-xl shadow-2xl flex flex-col text-slate-50">
                         <div className="flex flex-col justify-center pt-2">
                             <div className="flex flex-row justify-between pt-2">
                                 <h3 className="text-xl font-bold">{company}</h3>
@@ -40,8 +44,9 @@ const WorkHistory = ({ company, year, position, achievements, resignation }) => 
                         </button>
                     </div>
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 

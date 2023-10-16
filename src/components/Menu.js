@@ -75,7 +75,7 @@ const CustomMenu = (props) => {
                 </>
             )
             }
-            <>
+            {/* <>
                 <mesh>
                     <Html wrapperClass scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[0, 0, -16]} transform>
                         <div className="flex top-[60px] md:top-[60px] text-center justify-center">
@@ -84,7 +84,7 @@ const CustomMenu = (props) => {
                     </Html>
                 </mesh>
 
-            </>
+            </> */}
             <Rocket />
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={100} />
@@ -105,8 +105,8 @@ const Menu = () => {
                     config={{ mass: 2, tension: 500 }}
                     snap={{ mass: 4, tension: 1500 }}
                     rotation={[0, 0, 0]}
-                    polar={[-Math.PI, Math.PI]}
-                    azimuth={[-Math.PI, Math.PI]}>
+                    polar={[-Math.PI / 3, Math.PI / 4]}
+                    azimuth={[-Math.PI / 2, Math.PI / 8]}>
 
                     <CustomMenu rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.25, 0]} />
                 </PresentationControls>

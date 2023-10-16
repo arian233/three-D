@@ -7,7 +7,6 @@ const About = () => {
             <div className=" flex md:flex-col flex-col mx-4" id="About">
                 <img src='/assets/me.jpg' alt="Me" className="rounded-full mx-auto w-72 h-80" />
                 <div className="py-16">
-                    <p className="text-center text-xl font-bold pt-4 text-slate-50">My name is Arian!</p>
                     <p className="text-center text-3xl font-bold pt-4 text-slate-50">I am A Full Stack Developer with BSc in Computing Science
                         and Minor in Bussiness Administration from Simon Fraser University (SFU)</p>
                     <p className="text-center text-2xl font-bold pt-4 text-slate-50">I have over two years of experience working as Front-end and fullStack developer</p>
