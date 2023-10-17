@@ -8,10 +8,11 @@ const WorkHistory = ({ company, year, position, achievements, resignation }) => 
         document.body.style.overflow = 'unset';
     }
     return (
-        <div className="md:col-start-3 md:col-end-5 col-start-1 col-span-6 m-3 justify-center items-center hover:col-start-2 hover:col-end-6 ">
+        <div className="md:col-start-3 md:col-end-5 col-start-1 col-span-6 m-3
+         justify-center items-center md:hover:col-start-2 md:hover:col-end-6 ">
             <div
                 className="fade-in opacity-0 transition-opacity duration-1000
-           bg-slate-300 w-full py-4 px-4 rounded-xl cursor-pointer hover:bg-[#EBFF0A]"
+           bg-slate-300 w-full py-4 px-4 rounded-xl cursor-pointer md:hover:bg-[#EBFF0A]"
                 onClick={() => setIsModalOpen(true)}
             >
                 <div className="flex items-center">
