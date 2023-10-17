@@ -27,15 +27,15 @@ function Contact() {
          justify-center items-center" ref={form} onSubmit={sendEmail}>
                     <div className="justify-between items-center w-full h-1/2">
                         <div className="my-6 flex flex-col ">
-                            <label className="text-slate-50 text-l pb-2">Name</label>
+                            <label className="text-l pb-2 text-[#ebff0a]">Name</label>
                             <input className="rounded-md bg-slate-300 h-16 " type="text" name="user_name" placeholder=" Type your name here" required />
                         </div>
                         <div className="my-6 flex flex-col w-full">
-                            <label className="text-slate-50 text-l pb-2">Email</label>
+                            <label className="text-l pb-2 text-[#ebff0a]">Email</label>
                             <input className="rounded-md bg-slate-300 pl-2 h-16" type="email" name="user_email" placeholder=" Type your email here" required />
                         </div>
                         <div className="my-6 flex flex-col w-full">
-                            <label className="text-slate-50 text-l pb-2">How can I help you?</label>
+                            <label className="text-l pb-2 text-[#ebff0a]">How can I help you?</label>
                             <textarea className="rounded-md bg-slate-300 pl-2 flex justify-center h-36" name="message" placeholder=" Type your message here" required />
                         </div>
                         <div className="flex items-center justify-center my-8">

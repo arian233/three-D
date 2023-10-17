@@ -33,7 +33,7 @@ function CareerTimeLine() {
     return (
         <div className="flex flex-col justify-center bg-black" id="Portfolio">
             <h1 className="text-2xl font-bold text-center bg-slate-800 text-slate-50 py-2 mb-4">Professional Career History Timeline</h1>
-            <h3 className="text-xl font-bold text-center text-slate-50">Click on a job to see more details</h3>
+            <h3 className="text-xl font-bold text-center text-slate-50">To see more details, click on each experience below</h3>
             <div className="items-center grid grid-cols-6 gap-4">
                 {career.map((job) => (
                     <WorkHistory key={job.company} {...job} className="w-full" />
@@ -42,7 +42,7 @@ function CareerTimeLine() {
             <div className="flex flex-col justify-center mt-8 bg-black" id="Certificates">
                 <h1 className="text-2xl font-bold text-center bg-slate-800 text-slate-50 py-2 mb-4">Certificates</h1>
 
-                <h3 className="text-xl font-bold text-center text-slate-50">Click on each certificate to verify.</h3>
+                <h3 className="text-xl font-bold text-center text-slate-50">To verify my certificates, click on them below</h3>
                 <div className="certificates__container w-full flex  justify-around pt-4 flex-col md:flex-row text-slate-50">
                     <div className="certificates__container_item flex flex-col items-center">
                         <h2 className="font-bold text-l">React Basic</h2>
