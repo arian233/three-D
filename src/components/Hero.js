@@ -10,6 +10,12 @@ const Hero = () => {
                 <p className="text-white mt-6 text-[20px]">Welcome to my Portfolio</p>
             </div>
 
+            <div className="absolute bottom-[20px] right-[20px] " id="Hero">
+                <p className="hidden md:block text-white mt-6 text-[20px]">
+                    To explore this rocket from various angles,
+                    <span><br />simply left-click on it and drag your cursor around.</span>
+                </p>
+            </div>
             <Menu />
         </>
     );
