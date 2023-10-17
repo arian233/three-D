@@ -21,9 +21,10 @@ const WorkHistory = ({ company, year, position, achievements, resignation }) => 
                 <h4>{position}</h4>
             </div>
             {isModalOpen && (
-                < div className="fixed md:w-screen inset-0 flex z-50 items-center justify-center overflow-y-auto bg-black md:text-lg">
-                    <div className=" w-5/6 p-2 rounded-xl shadow-2xl flex flex-col text-slate-50">
-                        <div className="flex flex-col justify-center pt-2">
+                < div className="fixed md:w-screen inset-0 z-50 items-center justify-center
+                 overflow-y-auto bg-black md:text-lg">
+                    <div className=" p-3 rounded-xl shadow-2xl flex flex-col text-slate-50 align-middle">
+                        <div className="flex flex-col justify-center pt-2 bg-slate-800 py-4 rounded-lg">
                             <div className="flex flex-row justify-between pt-2">
                                 <h3 className="text-xl font-bold">{company}</h3>
                                 <h3>{year}</h3>
