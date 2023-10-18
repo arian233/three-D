@@ -11,13 +11,13 @@ import Contact from './components/Contact';
 const root = createRoot(document.getElementById('root'));
 root.render(
   <>
-    {/* <Suspense fallback={null}> */}
-    <Hero />
-    <About />
-    <Portfolio />
-    <Contact />
-    <Footer />
-    {/* </Suspense>
-    <Loader /> */}
+    <Suspense fallback={null}>
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </Suspense>
+    <Loader />
   </>
 );

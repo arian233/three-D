@@ -1,6 +1,6 @@
-import { Suspense, useRef } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX, useGLTF, Loader } from '@react-three/drei';
+import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX, useGLTF } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 
@@ -106,6 +106,7 @@ const Menu = () => {
                 <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
+
                 <PresentationControls
                     global
                     config={{ mass: 2, tension: 500 }}
@@ -114,14 +115,11 @@ const Menu = () => {
                     polar={[-Math.PI / 3, Math.PI / 4]}
                     azimuth={[-Math.PI / 2, Math.PI / 8]}>
 
-                    <Suspense fallback={null}>
-                        <CustomMenu rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.25, 0]} />
-                    </Suspense>
+                    <CustomMenu rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.25, 0]} />
                 </PresentationControls>
                 <Environment preset="city" />
             </Canvas>
-            <Loader />
-        </div >
+        </div>
     )
 }
 export default Menu;
