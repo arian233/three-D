@@ -5,7 +5,6 @@ import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 
 const menuItems = [
-
     {
         label: 'About',
         value: 'About',
@@ -27,9 +26,6 @@ const Rocket = () => {
     const fbx = useGLTF('/assets/scene.gltf')
     return (
         <primitive scale={14} object={fbx.scene} rotation={[2.2, -0.3, 0]} />
-
-
-
     )
 }
 
@@ -41,15 +37,12 @@ const CustomMenu = (props) => {
         switch (label) {
             case 'About':
                 document.getElementById('About').scrollIntoView({ behavior: 'smooth' })
-                console.log('About')
                 break;
             case 'Portfolio':
                 document.getElementById('Portfolio').scrollIntoView({ behavior: 'smooth' })
-                console.log('Portfolio')
                 break;
             case 'Contact':
                 document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })
-                console.log('Contact')
                 break;
             default:
                 break;
@@ -81,16 +74,6 @@ const CustomMenu = (props) => {
                 </>
             )
             }
-            {/* <>
-                <mesh>
-                    <Html wrapperClass scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[0, 0, -16]} transform>
-                        <div className="flex top-[60px] md:top-[60px] text-center justify-center">
-                            <p className='text-white'>You can chckout this spaceship by left clicking on it and drag the cursor around</p>
-                        </div>
-                    </Html>
-                </mesh>
-
-            </> */}
             <Rocket />
             <EffectComposer>
                 <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={100} />
@@ -106,7 +89,6 @@ const Menu = () => {
                 <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
-
                 <PresentationControls
                     global
                     config={{ mass: 2, tension: 500 }}
@@ -114,7 +96,6 @@ const Menu = () => {
                     rotation={[0, 0, 0]}
                     polar={[-Math.PI / 3, Math.PI / 4]}
                     azimuth={[-Math.PI / 2, Math.PI / 8]}>
-
                     <CustomMenu rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.25, 0]} />
                 </PresentationControls>
                 <Environment preset="city" />

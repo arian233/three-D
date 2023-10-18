@@ -17,10 +17,8 @@ const Hero = () => {
                     <span><br />simply left-click on it and drag your cursor around.</span>
                 </p>
             </div>
-            <p className="md:hidden absolute bottom-24 text-white text-center text-[16px]"> </p>
             <div className="md:hidden block">
                 <Modal />
-
             </div>
             <Menu />
         </>

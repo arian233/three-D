@@ -41,7 +41,6 @@ function CareerTimeLine() {
             </div>
             <div className="flex flex-col justify-center mt-8 bg-black" id="Certificates">
                 <h1 className="text-2xl font-bold text-center bg-slate-800 text-slate-50 py-2 mb-4">Certificates</h1>
-
                 <h3 className="text-xl font-bold text-center text-slate-50">To verify my certificates, click on them below</h3>
                 <div className="certificates__container w-full flex  justify-around pt-4 flex-col md:flex-row text-slate-50">
                     <div className="certificates__container_item flex flex-col items-center">
