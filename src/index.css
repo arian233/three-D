@@ -1,10 +1,11 @@
 @tailwind base;
 
 @layer base {
-    h1{
+    h1 {
         @apply text-[54px] font-black leading-[50px]
     }
-    h2{
+
+    h2 {
         @apply text-[36px] font-normal leading-[40px] text-[#ebff0a] tracking-widest mt-2
     }
 }
@@ -24,10 +25,6 @@ body,
     padding: 0;
 }
 
-body{
-    background: rgb(34, 4, 66);
-    background: linear-gradient(0deg, rgba(34, 4, 66, 1) 0%, rgba(0, 212, 255, 1) 100%);
-}
 
 #root {
     height: 100%;

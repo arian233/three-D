@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX, useGLTF } from '@react-three/drei';
+import { Environment, PerspectiveCamera, PresentationControls, Html, useGLTF } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 
@@ -68,7 +68,6 @@ const CustomMenu = (props) => {
                                     </div>
                                 </div>
                             </div>
-
                         </Html>
                     </mesh>
                 </>
@@ -84,7 +83,7 @@ const CustomMenu = (props) => {
 
 const Menu = () => {
     return (
-        <div className='mt-44 h-[70vh] md:mt-0 md:w-full md:h-full'>
+        <div className='h-[90vh] pt-48 mt-0 md:pt-0 md:w-full md:h-full'>
             <Canvas shadows dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
                 <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
