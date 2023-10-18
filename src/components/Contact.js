@@ -9,7 +9,7 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_bt216j8', 'template_vl56h1l', form.current, '2Rwmd2dJ7s0Q-97AH')
+        emailjs.sendForm('service_l6taozk', 'template_et8bcur', form.current, '2Rwmd2dJ7s0Q-97AH')
             .then((result) => {
                 console.log(result.text);
                 alert("Your message has been sent!");
