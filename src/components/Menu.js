@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX } from '@react-three/drei';
+import { Environment, PerspectiveCamera, PresentationControls, Html, useFBX, useGLTF } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 
@@ -24,8 +24,13 @@ const menuItems = [
 ]
 
 const Rocket = () => {
-    const fbx = useFBX('/assets/Rocket.fbx')
-    return <primitive object={fbx} scale={0.2} rotation={[2.2, -0.3, 0]} />
+    const fbx = useGLTF('/assets/scene.gltf')
+    return (
+        <primitive scale={14} object={fbx.scene} rotation={[2.2, -0.3, 0]} />
+
+
+
+    )
 }
 
 const CustomMenu = (props) => {
@@ -97,10 +102,11 @@ const CustomMenu = (props) => {
 const Menu = () => {
     return (
         <div className='mt-44 h-[70vh] md:mt-0 md:w-full md:h-full'>
-            <Canvas shadows dpr={[1, 2]}>
+            <Canvas shadows dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
                 <PerspectiveCamera makeDefault fov={90} position={[0, 0, 30]} focusDistance={[0, 0]} />
                 <ambientLight color="#ff0a65" intensity={0.5} />
                 <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} castShadow />
+
                 <PresentationControls
                     global
                     config={{ mass: 2, tension: 500 }}
