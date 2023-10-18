@@ -8,15 +8,18 @@ const menuItems = [
 
     {
         label: 'About',
-        value: 'About'
+        value: 'About',
+        id: 1
     },
     {
         label: 'Portfolio',
-        value: 'Portfolio'
+        value: 'Portfolio',
+        id: 2
     },
     {
         label: 'Contact',
-        value: 'Contact'
+        value: 'Contact',
+        id: 3
     }
 ]
 
@@ -57,12 +60,12 @@ const CustomMenu = (props) => {
         <group ref={ref} {...props} dispose={null}>
             {menuItems.map((item, key) =>
                 <>
-                    <mesh key={key} onClick={() => handleMenuItemClick(item.label)}>
-                        <Html wrapperClass key={key} scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[12, 0, (key - 2) * -3]} transform>
+                    <mesh key={item.id} onClick={() => handleMenuItemClick(item.label)}>
+                        <Html wrapperClass key={item.id} scale={4} rotation={[Math.PI / 1.5, 0, 0]} position={[12, 0, (key - 2) * -3]} transform>
                             <div onClick={() => handleMenuItemClick(item.value)}>
                                 <div className='group relative cursor-pointer flex h-28px justify-between items-center
                              text-black w-[97px] text-center text-sm hover:text-white '>
-                                    <div className='absolute z-[-1] h-full text-xl text-center align-middle right-0 block transform '>
+                                    <div className='absolute z-20 h-full text-xl text-center align-middle right-0 block transform '>
                                         {item.label}
                                     </div>
                                 </div>
@@ -70,8 +73,6 @@ const CustomMenu = (props) => {
 
                         </Html>
                     </mesh>
-
-
                 </>
             )
             }

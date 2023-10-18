@@ -1,4 +1,5 @@
 import Menu from "./Menu";
+import Modal from "./Modal";
 
 const Hero = () => {
     return (
@@ -16,7 +17,11 @@ const Hero = () => {
                     <span><br />simply left-click on it and drag your cursor around.</span>
                 </p>
             </div>
-            <p className="md:hidden absolute bottom-24 text-white text-center text-[16px]"> Please note that this website requires significant computational resources and may not perform optimally on older mobile devices.</p>
+            <p className="md:hidden absolute bottom-24 text-white text-center text-[16px]"> </p>
+            <div className="md:hidden block">
+                <Modal />
+
+            </div>
             <Menu />
         </>
     );
