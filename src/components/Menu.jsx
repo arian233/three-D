@@ -63,15 +63,13 @@ const CustomMenu = (props) => {
   });
   return (
     <group ref={ref} {...props} dispose={null}>
-      {menuItems.map((item, key) => (
-        <>
+      {menuItems.map((item) => (
           <mesh key={item.id} onClick={() => handleMenuItemClick(item.label)}>
             <Html
               wrapperClass
-              key={item.id}
               scale={4}
               rotation={[Math.PI / 1.5, 0, 0]}
-              position={[12, 0, (key - 2) * -3]}
+              position={[12, 0, (item.id - 2) * -3]}
               transform
             >
               <div onClick={() => handleMenuItemClick(item.value)}>
@@ -86,7 +84,6 @@ const CustomMenu = (props) => {
               </div>
             </Html>
           </mesh>
-        </>
       ))}
       <Rocket />
       <EffectComposer>
