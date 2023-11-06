@@ -33,7 +33,7 @@ const WorkHistory = ({
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 overflow-y-scroll"
         >
-          <div className="md:w-3/4 md:h-auto w-full p-3 rounded-xl shadow-2xl text-slate-50 text-center">
+          <div className="md:w-3/4 md:h-auto w-full p-3 rounded-xl shadow-2xl text-slate-50 text-center mt-8 md:mt-0">
           <div className=" p-3 rounded-xl shadow-2xl flex flex-col text-slate-50 align-middle text-center">
             <div className="flex flex-col justify-center pt-2 bg-slate-800 py-4 rounded-lg">
               <div className="flex flex-row justify-between pt-2">
