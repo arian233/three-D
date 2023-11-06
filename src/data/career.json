@@ -1,11 +1,11 @@
 [
     {
         "company": "MetroQuest",
-        "year": " Jan 2022 - Apr 2023",
-        "position": "Full-Stack Developer",
+        "year": " Jan 2023 - Apr 2023",
+        "position": "Full Stack Developer",
         "achievements": [
             "Improved insights and decision-making for the customer success team by developing customer activity tracking and visualization solution using .NET framework and React.",
-            "Successfully repaired broken APIs and pages built with AngularJS framework, ensuring accurate and up-to-date information for customers.",
+            "Successfully repaired broken APIs and pages built with Angular framework, ensuring accurate and up-to-date information for customers.",
             "Revived and enhanced an outdated AngularJS application to provide the customer success team with critical health data on customers.",
             "Created foundations of a new Accessibility project including the setup of:",
             " -> Front-end: set up a new React (TypeScript) project and implemented Sass-less, Jest, Lint rules and implemented navigation.",
@@ -17,7 +17,7 @@
     {
         "company": "Profolio",
         "year": "Aug 2022 - Jan 2023",
-        "position": "Full-Stack Developer",
+        "position": "Full Stack Developer",
         "achievements": ["Encouraged everyone in the team to create reusable components where possible and as a result, the development process became shorter, and the code became much cleaner.",
             "Implemented custom React hooks for data fetching that leverage local Storage for caching, thereby minimizing redundant API calls and optimizing React performance by preventing unnecessary re-renders.",
             "Contributed to the backend database design to ensure maximum efficiency of API usage to save on API-related costs."

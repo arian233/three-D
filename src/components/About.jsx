@@ -7,7 +7,7 @@ const About = () => {
         About Me
       </h1>
       <div
-        className="flex align-middle justify-center items-center pt-16 pb-12 bg-gradient-to-r from-purple-600 to-cyan-600"
+        className="flex align-middle justify-center items-center pt-16 pb-12 bg-gradient-to-r from-pink-800 to-cyan-600"
         id="About"
       >
         <div className=" flex md:flex-col flex-col mx-4 mt-4" id="About">
@@ -24,16 +24,16 @@ const About = () => {
               <b> Simon Fraser University </b> (SFU)
             </p>
             <p className="text-center text-2xl pt-4 text-slate-50">
-              I have <b>over two years</b> of experience working as Front-end
-              and fullStack developer
+              I have <b>over two years</b> of experience working as <b>Front-end </b>
+              and <b>Full Stack Developer</b>
             </p>
             <p className="text-center text-xl font-bold pt-4 text-slate-50">
-              Specialized in JavaScript, TypeScript, React, C#, .NET and MySQL
+              Specialized in <b>JavaScript, TypeScript, React, C#, .NET and Microsoft SQL Server</b>
             </p>
           </div>
           <div className="flex justify-center items-center border-solid">
             <h3 className="text-slate-50 mr-2 text-xl text-center font-semibold">
-              Lets connect on LinkedIn:{" "}
+              Let's connect on LinkedIn:{" "}
             </h3>
             <a
               href="https://www.linkedin.com/in/4arians/"

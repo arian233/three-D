@@ -40,11 +40,11 @@ function Contact() {
     );
   return (
     <div
-      className="flex flex-col text-2xl font-bold justify-center text-center bg-black"
+      className="flex flex-col text-2xl font-bold justify-center text-center bg-slate-900"
       id="Contact"
     >
       <h1 className="text-2xl font-bold bg-slate-800 text-slate-50 py-2">
-        Lets Connect
+        Contact me for any inquiries
       </h1>
       <div className="grid grid-cols-6 justify-center">
         <form
@@ -72,7 +72,7 @@ function Contact() {
                 type="email"
                 onChange={(e) => setEmail(e.target.value)}
                 name="user_email"
-                placeholder=" Type your email here"
+                placeholder="Type your email here"
                 required
               />
             </div>
@@ -84,7 +84,7 @@ function Contact() {
                 className="rounded-md bg-slate-300 pl-2 flex justify-center h-36"
                 name="message"
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder=" Type your message here"
+                placeholder="Type your message here"
                 required
               />
             </div>
