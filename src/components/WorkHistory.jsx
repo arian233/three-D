@@ -31,31 +31,31 @@ const WorkHistory = ({
       </div>
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 overflow-y-scroll"
         >
           <div className="md:w-3/4 md:h-auto w-full p-3 rounded-xl shadow-2xl text-slate-50 text-center">
           <div className=" p-3 rounded-xl shadow-2xl flex flex-col text-slate-50 align-middle text-center">
             <div className="flex flex-col justify-center pt-2 bg-slate-800 py-4 rounded-lg">
               <div className="flex flex-row justify-between pt-2">
-                <h3 className="text-xl font-bold">{company}</h3>
-                <h3>{year}</h3>
+                <h3 className="text-xl font-bold ml-8">{company}</h3>
+                <h3 className="mr-8 align-middle">{year}</h3>
               </div>
-              <h3>{position}</h3>
+              <h3 className="text-xl font-bold">{position}</h3>
             </div>
-            <h3 className="pt-4">Achievements:</h3>
-            <ul className="list-disc px-8 text-left md:ml-32">
+            <h3 className="pt-4 font-bold">Achievements:</h3>
+            <ul className="list-disc px-4 md:px-0 text-left md:ml-8">
               {achievements &&
                 achievements.map((achievement) => (
                   <li key={achievement}>{achievement}</li>
                 ))}
             </ul>
+          </div>
             <button
               className=" align-middle items-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 my-4 rounded"
               onClick={() => setIsModalOpen(false)}
             >
               Close
             </button>
-          </div>
         </div>
         </div>
       )}
