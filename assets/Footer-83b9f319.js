@@ -1,0 +1,1 @@
+import{j as t}from"./index-a7dea518.js";const s=()=>t.jsx("footer",{className:"bottom-1 w-full flex justify-center bg-slate-800",children:t.jsx("p",{className:"text-[#f9a142] text-lg",children:"Arian Ansari. @2023"})});export{s as default};
