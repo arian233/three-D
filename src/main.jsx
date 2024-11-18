@@ -1,17 +1,19 @@
-import { createRoot } from 'react-dom/client';
-import { Suspense } from 'react';
-import { Loader } from '@react-three/drei';
-import './index.css';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import { createRoot } from "react-dom/client";
+import { Suspense, lazy } from "react";
+import { Loader } from "@react-three/drei";
+import "./index.css";
 
-const root = createRoot(document.getElementById('root'));
+const Footer = lazy(() => import("./components/Footer"));
+const Hero = lazy(() => import("./components/Hero"));
+const About = lazy(() => import("./components/About"));
+const Portfolio = lazy(() => import("./components/Portfolio"));
+const Contact = lazy(() => import("./components/Contact"));
+
+const root = createRoot(document.getElementById("root"));
+
 root.render(
   <>
-    <Suspense fallback={null}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Hero />
       <About />
       <Portfolio />
