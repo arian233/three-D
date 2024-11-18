@@ -24,11 +24,15 @@ const About = () => {
               <b> Simon Fraser University </b> (SFU)
             </p>
             <p className="text-center text-2xl pt-4 text-slate-50">
-              I have <b>over two years</b> of experience working as <b>Front-end </b>
+              I have <b>over three years</b> of experience working as{" "}
+              <b>Front-end </b>
               and <b>Full Stack Developer</b>
             </p>
             <p className="text-center text-xl font-bold pt-4 text-slate-50">
-              Specialized in <b>JavaScript, TypeScript, React, C#, .NET and Microsoft SQL Server</b>
+              Specialized in{" "}
+              <b>
+                JavaScript, TypeScript, React, C#, .NET and Microsoft SQL Server
+              </b>
             </p>
           </div>
           <div className="flex justify-center items-center border-solid">
