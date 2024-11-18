@@ -1,50 +1,51 @@
 [
-    {
-        "company": "MetroQuest",
-        "year": " Jan 2023 - Apr 2023",
-        "position": "Full Stack Developer",
-        "achievements": [
-            "Improved insights and decision-making for the customer success team by developing customer activity tracking and visualization solution using .NET framework and React.",
-            "Successfully repaired broken APIs and pages built with Angular framework, ensuring accurate and up-to-date information for customers.",
-            "Revived and enhanced an outdated AngularJS application to provide the customer success team with critical health data on customers.",
-            "Created foundations of a new Accessibility project including the setup of:",
-            " -> Front-end: set up a new React (TypeScript) project and implemented Sass-less, Jest, Lint rules and implemented navigation.",
-            " -> Dev-Ops: Set up Azure pipelines for CI/ CD and created necessary development environments with their respective branches.",
-            " -> Backend: Following best industry practices, I created an API that feeds necessary survey data for Accessibility pages."
-        ]
-
-    },
-    {
-        "company": "Profolio",
-        "year": "Aug 2022 - Jan 2023",
-        "position": "Full Stack Developer",
-        "achievements": ["Encouraged everyone in the team to create reusable components where possible and as a result, the development process became shorter, and the code became much cleaner.",
-            "Implemented custom React hooks for data fetching that leverage local Storage for caching, thereby minimizing redundant API calls and optimizing React performance by preventing unnecessary re-renders.",
-            "Contributed to the backend database design to ensure maximum efficiency of API usage to save on API-related costs."
-        ]
-    },
-    {
-        "company": "aByte",
-        "year": "Sep 2021 - Jan 2023",
-        "position": "Front-end Developer",
-        "achievements": [
-            "Developed React-based landing pages for clients, ensuring high-quality user experience.",
-            "Optimized loading times of smaller projects by utilizing Next.js framework.",
-            "Assisted in the implementation of the Express.js framework.",
-            "Rigorously tested codebase using Jest framework to ensure robustness and reliability."
-        ]
-    },
-    {
-        "company": "Fatigue Science",
-        "year": "Jan 2021 - Sep 2021",
-        "position": "QA Engineer Internship",
-        "achievements": [
-            "Developed and updated automation test files using Ruby while self-teaching the Ruby language",
-            "Installed and setup Ruby to work flawlessly with Selenium and Chrome Driver on MacOS",
-            "Performed both Automated and manual tests on the web application.",
-            "Utilized Postman for back-End API testing and Selenium for the automation of front-End testing.",
-            "Updated legacy JavaScript scripts to be compatible with the new user data formats."
-        ]
-
-    }
+  {
+    "company": "Squamish Coach Lines",
+    "year": " Jan 2024 - Jun 2024",
+    "position": "Web developer (Contract)",
+    "achievements": [
+      "Improved insights and decision-making for the customer success team by developing customer activity tracking and visualization solution using .NET framework and React.",
+      "Successfully repaired broken APIs and pages built with Angular framework, ensuring accurate and up-to-date information for customers.",
+      "Revived and enhanced an outdated AngularJS application to provide the customer success team with critical health data on customers.",
+      "Created foundations of a new Accessibility project including the setup of:",
+      " -> Front-end: set up a new React (TypeScript) project and implemented Sass-less, Jest, Lint rules and implemented navigation.",
+      " -> Dev-Ops: Set up Azure pipelines for CI/ CD and created necessary development environments with their respective branches.",
+      " -> Backend: Following best industry practices, I created an API that feeds necessary survey data for Accessibility pages."
+    ]
+  },
+  {
+    "company": "Profolio",
+    "year": "Aug 2022 - Jul 2023",
+    "position": "Full Stack Developer",
+    "achievements": [
+      "Designed reusable React (TypeScript) components, reducing code volume by 30% and streamlining codebase refactoring.",
+      "Developed and maintained a RESTful API using .NET (C#), ensuring efficient data delivery.",
+      "Translated Figma designs into responsive user interfaces with React and Tailwind CSS, improving user engagement by 25%.",
+      "Engineered and deployed a responsive front-end architecture using React.js, achieving a 25% boost in user engagement over a three-month period by integrating dynamic data feeds with real-time updates, leveraging  RESTful API.",
+      "Conducted pull request reviews for back-end and front-end repositories, contributing to the collaborative development process."
+    ]
+  },
+  {
+    "company": "aByte",
+    "year": "Sep 2021 - Jan 2023",
+    "position": "Front-end Developer",
+    "achievements": [
+      "Developed React-based landing pages for clients, ensuring high-quality user experience.",
+      "Optimized loading times of smaller projects by utilizing Next.js framework.",
+      "Assisted in the implementation of the Express.js framework.",
+      "Rigorously tested codebase using Jest framework to ensure robustness and reliability."
+    ]
+  },
+  {
+    "company": "Fatigue Science",
+    "year": "Jan 2021 - Sep 2021",
+    "position": "QA Engineer Internship",
+    "achievements": [
+      "Developed and updated automation test files using Ruby while self-teaching the Ruby language",
+      "Installed and setup Ruby to work flawlessly with Selenium and Chrome Driver on MacOS",
+      "Performed both Automated and manual tests on the web application.",
+      "Utilized Postman for back-End API testing and Selenium for the automation of front-End testing.",
+      "Updated legacy JavaScript scripts to be compatible with the new user data formats."
+    ]
+  }
 ]
